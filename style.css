@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+    font-family: 'Roboto Mono', monospace;
+    box-sizing: border-box;
+    /* outline: solid 1px white; */
+}
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1535408913330-a71d0a3e29ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    margin: 0;
+    color: white;
+    overflow: hidden;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+body * {
+    z-index: 1;
+}
+
+h1 {
+    font-size: 60px;
+    margin: -80px 0 40px;
+}
+
+.countdown {
+    display: flex;
+    transform: scale(2);
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+
+}
+
+.time h2 {
+    margin: 0 0 0 5px;
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .time {
+        margin: 5px;
+        font-size: 10px;
+    }
+
+    small {
+        font-size: 7px;
+    }
+
+}
